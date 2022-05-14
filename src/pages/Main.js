@@ -3,7 +3,8 @@ import MPHands from "../components/MPHands";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import {Helmet} from "react-helmet";
-import assistantLogo from "../assets/Google_Assistant_logo.png";
+import Chat from "../components/Chat";
+// import styled from 'styled-components';
 
 import '../App.css';
 
@@ -27,10 +28,7 @@ function Main() {
           </div>
           <div className="section__assistant">
             <ul>
-              <li>
-                <img src={assistantLogo} className="assistant" alt={"구글 어시스턴트 로고"}/>
-                <p>안녕하세요? 무엇을 도와드릴까요?</p>
-              </li>
+              <Chat text={"안녕하세요? 무엇을 도와드릴까요?"}/>
             </ul>
           </div>
         </div>
